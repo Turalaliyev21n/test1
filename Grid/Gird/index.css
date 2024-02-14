@@ -1,0 +1,128 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+section{
+  background-color: aliceblue;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container{
+   display: grid;
+   grid-template-columns: repeat(3,300px);
+   grid-template-rows: repeat(2,300px);
+}
+.container::before{
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 860px;
+    height: 640px;
+    background: #FFFFFF;
+    z-index: 0;
+    transform: translate(-50%,-50%);
+    border-radius: 10px;
+}
+.box{
+    z-index: 1;
+}
+.box:nth-child(1){
+   background-color: #FB896B;
+   border-top-left-radius: 10px;
+   display: flex;
+   flex-direction: column;
+   gap: 20px;
+   padding: 45px;
+   color: white;
+   font-size: 19px;
+
+}
+.box:nth-child(2){
+    background-color: #FB6B6B;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 20px;
+    gap: 20px;
+    color: white;
+    font-size: 19px;
+    
+}
+.box:nth-child(2) .boxs_p{
+    background: #E65454;
+}
+.box:nth-child(3){
+  background-color: #F1A864;
+  border-top-right-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-left: 20px;
+  gap: 20px;
+  color: white;
+   font-size: 19px;
+ 
+}
+.box:nth-child(3) .boxs_p{
+    background: #E29248;
+}
+.box:nth-child(4){
+    background-color:  #FBD36B;
+    border-bottom-left-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 45px;
+    color: black;
+    font-size: 19px;
+    
+}
+.box:nth-child(4) p{
+    color: black;
+}
+.box:nth-child(4) i{
+    color: black;
+}
+.box:nth-child(4) .boxs_p{
+    background: #E1B648;
+
+}
+.box:nth-child(5){
+    background: #485257;
+    grid-column: 2/4;
+    border-bottom-right-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+    padding: 45px;
+    color: white;
+    font-size: 19px;
+}
+.box:nth-child(5) .boxs_p{
+    background-color: white;
+    color: black;
+}
+.boxs{
+    display: flex;
+    gap: 10px;
+    font-size: 20px;
+    color: white;
+}
+.boxs_p{
+    width: 205px;
+    height: 41px;
+    background: #F27151;
+    padding: 10px;
+}
+.box_text{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
